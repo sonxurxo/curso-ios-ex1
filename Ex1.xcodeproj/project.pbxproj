@@ -23,6 +23,7 @@
 		BA65064418698BE50074D87A /* Ex1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064318698BE50074D87A /* Ex1Tests.m */; };
 		BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064E18699B050074D87A /* Tab1ViewController.m */; };
 		BA65065218699CC90074D87A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65065118699CC90074D87A /* FirstViewController.m */; };
+		BA65069A1869A7850074D87A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6506991869A7850074D87A /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		BA65064E18699B050074D87A /* Tab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
 		BA65065018699CC90074D87A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		BA65065118699CC90074D87A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BA6506981869A7850074D87A /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		BA6506991869A7850074D87A /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				BA65064E18699B050074D87A /* Tab1ViewController.m */,
 				BA65065018699CC90074D87A /* FirstViewController.h */,
 				BA65065118699CC90074D87A /* FirstViewController.m */,
+				BA6506981869A7850074D87A /* Utils.h */,
+				BA6506991869A7850074D87A /* Utils.m */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				BA65062F18698BE40074D87A /* SecondViewController.m in Sources */,
 				BA65062918698BE40074D87A /* AppDelegate.m in Sources */,
 				BA65065218699CC90074D87A /* FirstViewController.m in Sources */,
+				BA65069A1869A7850074D87A /* Utils.m in Sources */,
 				BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */,
 				BA65062518698BE40074D87A /* main.m in Sources */,
 			);

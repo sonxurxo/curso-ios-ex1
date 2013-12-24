@@ -8,6 +8,8 @@
 
 #import "FirstViewController.h"
 
+#import "Utils.h"
+
 @interface FirstViewController ()
 
 @end
@@ -37,6 +39,7 @@
 }
 
 - (IBAction)didTapNextButton:(id)sender {
+    [[Utils sharedInstance] weirdMethod];
     [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
