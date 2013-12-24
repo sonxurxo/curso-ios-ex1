@@ -13,6 +13,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSDictionary *appDefaults = @{@"name_preference" : @"Xurxo",
+                                  @"enabled_preference" : @YES,
+                                  @"slider_preference" : @.3};
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+    
     return YES;
 }
 							

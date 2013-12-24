@@ -23,13 +23,15 @@
     self.title = @"Second";
     
     [self.openModalButton addTarget:self action:@selector(didTapOpenModalButton2:) forControlEvents:UIControlEventTouchUpInside];
-    
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     NSLog(@"viewWillAppear");
+    
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"name_preference"]) {
+        NSLog(@"Name: %@", [[NSUserDefaults standardUserDefaults] stringForKey:@"name_preference"]);
+    }
     [super viewWillAppear:animated];
 }
 
@@ -66,11 +68,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didTapSaveNamePreferenceButton:(id)sender {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.namePreferenceTextField.text forKey:@"name_preference"];
+    [defaults synchronize];
+}
+
 - (IBAction)didTapOpenModalButton:(id)sender {
     [self performSegueWithIdentifier:@"OpenTabs" sender:self];
 }
 
-- (IBAction)didTapOpenModalButton2:(id)sender {
+- (void)didTapOpenModalButton2:(id)sender {
     NSLog(@"didTapOpenModalButton2: called");
 }
 

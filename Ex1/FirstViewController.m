@@ -43,7 +43,6 @@
     
     customView.frame = CGRectMake(0, 80, customView.frame.size.width, customView.frame.size.height);
     [self.view addSubview:customView];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

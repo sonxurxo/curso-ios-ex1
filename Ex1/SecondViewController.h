@@ -13,6 +13,8 @@
 @property (strong, nonatomic) id delegate;
 
 @property (strong, nonatomic) IBOutlet UIButton *openModalButton;
+@property (strong, nonatomic) IBOutlet UITextField *namePreferenceTextField;
+- (IBAction)didTapSaveNamePreferenceButton:(id)sender;
 
 - (IBAction)didTapOpenModalButton:(id)sender;
 
