@@ -140,6 +140,7 @@
                     <connections>
                         <segue destination="ugk-gF-EKh" kind="relationship" relationship="viewControllers" id="T3O-e1-ZMx"/>
                         <segue destination="iMP-wq-0gq" kind="relationship" relationship="viewControllers" id="smC-pN-zw8"/>
+                        <segue destination="cST-t7-2od" kind="relationship" relationship="viewControllers" id="V2v-7w-fSQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3K-1m-FY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,6 +223,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whG-Tv-A6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1246" y="397"/>
+        </scene>
+        <!--Events View Controller - Item-->
+        <scene sceneID="CQu-GK-Q7w">
+            <objects>
+                <viewController id="cST-t7-2od" customClass="EventsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acZ-K8-cs3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qXE-Ip-UFk" appends="YES" id="hva-Fm-7Gy"/>
+                            <outletCollection property="gestureRecognizers" destination="W4R-Rx-Jh1" appends="YES" id="VW1-RG-ccr"/>
+                            <outletCollection property="gestureRecognizers" destination="TRT-mj-5Xk" appends="YES" id="9hf-av-161"/>
+                            <outletCollection property="gestureRecognizers" destination="bYu-Vc-ZJJ" appends="YES" id="CMT-rk-bUD"/>
+                            <outletCollection property="gestureRecognizers" destination="War-Mq-A3X" appends="YES" id="Mkw-SO-5FE"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HH1-vl-Ejt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhO-pz-a7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="qXE-Ip-UFk">
+                    <connections>
+                        <action selector="pinchGestureAction:" destination="cST-t7-2od" id="hFW-UY-Uhr"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="W4R-Rx-Jh1">
+                    <connections>
+                        <action selector="rotationGestureAction:" destination="cST-t7-2od" id="f4t-Jl-xK6"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="TRT-mj-5Xk">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="cST-t7-2od" id="Ki2-po-C3P"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="bYu-Vc-ZJJ">
+                    <connections>
+                        <action selector="panGestureAction:" destination="cST-t7-2od" id="LBQ-av-clY"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="War-Mq-A3X">
+                    <connections>
+                        <action selector="longPressGestureAction:" destination="cST-t7-2od" id="1HE-kf-oMU"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1246" y="1125"/>
         </scene>
         <!--Text Inputs View Controller - Text inputs-->
         <scene sceneID="d5e-bd-Ivb">

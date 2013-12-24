@@ -10,4 +10,14 @@
 
 @interface EventsViewController : UIViewController
 
+- (IBAction)pinchGestureAction:(id)sender;
+
+- (IBAction)rotationGestureAction:(id)sender;
+
+- (IBAction)swipeGestureAction:(id)sender;
+
+- (IBAction)panGestureAction:(id)sender;
+
+- (IBAction)longPressGestureAction:(id)sender;
+
 @end

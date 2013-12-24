@@ -27,6 +27,7 @@
 		BA65069D1869A9B90074D87A /* HelloCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA65069C1869A9B90074D87A /* HelloCustomView.xib */; };
 		BA6506A01869AC690074D87A /* HelloCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65069F1869AC690074D87A /* HelloCustomView.m */; };
 		BA6506A31869B1000074D87A /* TextInputsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6506A21869B1000074D87A /* TextInputsViewController.m */; };
+		BA6506A61869B3C80074D87A /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6506A51869B3C80074D87A /* EventsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		BA65069F1869AC690074D87A /* HelloCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloCustomView.m; sourceTree = "<group>"; };
 		BA6506A11869B1000074D87A /* TextInputsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputsViewController.h; sourceTree = "<group>"; };
 		BA6506A21869B1000074D87A /* TextInputsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputsViewController.m; sourceTree = "<group>"; };
+		BA6506A41869B3C80074D87A /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		BA6506A51869B3C80074D87A /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				BA65069F1869AC690074D87A /* HelloCustomView.m */,
 				BA6506A11869B1000074D87A /* TextInputsViewController.h */,
 				BA6506A21869B1000074D87A /* TextInputsViewController.m */,
+				BA6506A41869B3C80074D87A /* EventsViewController.h */,
+				BA6506A51869B3C80074D87A /* EventsViewController.m */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				BA6506A31869B1000074D87A /* TextInputsViewController.m in Sources */,
 				BA65069A1869A7850074D87A /* Utils.m in Sources */,
 				BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */,
+				BA6506A61869B3C80074D87A /* EventsViewController.m in Sources */,
 				BA65062518698BE40074D87A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
