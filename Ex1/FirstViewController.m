@@ -39,8 +39,6 @@
 }
 
 - (IBAction)didTapNextButton:(id)sender {
-    SecondViewController* secondViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SecondViewController"];
-    [self.navigationController pushViewController:secondViewController animated:YES];
-//    [self performSegueWithIdentifier:@"Next" sender:self];
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 @end
