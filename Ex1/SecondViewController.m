@@ -21,6 +21,9 @@
     [super viewDidLoad];
     NSLog(@"viewDidLoad");
     self.title = @"Second";
+    
+    [self.openModalButton addTarget:self action:@selector(didTapOpenModalButton2:) forControlEvents:UIControlEventTouchUpInside];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -65,6 +68,10 @@
 
 - (IBAction)didTapOpenModalButton:(id)sender {
     [self performSegueWithIdentifier:@"OpenTabs" sender:self];
+}
+
+- (IBAction)didTapOpenModalButton2:(id)sender {
+    NSLog(@"didTapOpenModalButton2: called");
 }
 
 @end

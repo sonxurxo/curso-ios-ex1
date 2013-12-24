@@ -12,6 +12,8 @@
 
 @interface FirstViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels;
+
 - (IBAction)didTapNextButton:(id)sender;
 
 @end

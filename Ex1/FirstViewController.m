@@ -29,6 +29,12 @@
 {
     [super viewDidLoad];
     self.title = @"First";
+    
+    UIColor* labelColor = [UIColor colorWithRed:.9 green:.1 blue:.1 alpha:1];
+    for (UILabel* label in self.labels)
+    {
+        label.textColor = labelColor;
+    }
 	// Do any additional setup after loading the view.
 }
 
