@@ -8,8 +8,6 @@
 
 #import "FirstViewController.h"
 
-#import "SecondViewController.h"
-
 @interface FirstViewController ()
 
 @end
@@ -41,4 +39,23 @@
 - (IBAction)didTapNextButton:(id)sender {
     [self performSegueWithIdentifier:@"Next" sender:self];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Next"])
+    {
+        SecondViewController* secondViewController = segue.destinationViewController;
+        secondViewController.delegate = self;
+    }
+}
+
+#pragma mark - SecondViewControllerDelegate methods
+
+- (void)secondViewControllerViewDidDisappearCallback:(NSString *)weirdParameter
+{
+    NSLog(@"Second view controller view did disappear callback with parameter: %@", weirdParameter);
+}
+
+#pragma mark -
+
 @end

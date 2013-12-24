@@ -39,6 +39,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     NSLog(@"viewWillDisappear");
+    [self.delegate secondViewControllerViewDidDisappearCallback:@"EL PARÁMETRO"];
     [super viewWillDisappear:animated];
 }
 

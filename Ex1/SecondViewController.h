@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SecondViewControllerDelegate <NSObject>
+
+- (void)secondViewControllerViewDidDisappearCallback:(NSString*)weirdParameter;
+
+@end
+
 @interface SecondViewController : UIViewController
+
+@property (strong, nonatomic) id<SecondViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UIButton *openModalButton;
 
