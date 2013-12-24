@@ -10,7 +10,8 @@
 
 #import "SecondViewController.h"
 
-@interface FirstViewController : UIViewController<SecondViewControllerDelegate>
+@interface FirstViewController : UIViewController
 
 - (IBAction)didTapNextButton:(id)sender;
+
 @end

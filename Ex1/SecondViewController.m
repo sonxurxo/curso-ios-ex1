@@ -39,7 +39,15 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     NSLog(@"viewWillDisappear");
-    [self.delegate secondViewControllerViewDidDisappearCallback:@"EL PARÁMETRO"];
+    
+    if (self.delegate && [self.delegate respondsToSelector:NSSelectorFromString(@"secondViewControllerViewDidDisappearCallback:")])
+    {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        [self.delegate performSelector:NSSelectorFromString(@"secondViewControllerViewDidDisappearCallback:") withObject:@"EL PARÁMETRO"];
+#pragma clang diagnostic pop
+    }
+    
     [super viewWillDisappear:animated];
 }
 
