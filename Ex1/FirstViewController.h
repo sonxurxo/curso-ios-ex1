@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstViewController.h
 //  Ex1
 //
 //  Created by Xurxo Méndez Pérez on 24/12/13.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FirstViewController : UIViewController
 
+- (IBAction)didTapNextButton:(id)sender;
 @end

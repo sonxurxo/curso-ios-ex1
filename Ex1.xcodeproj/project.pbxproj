@@ -14,13 +14,15 @@
 		BA65062518698BE40074D87A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65062418698BE40074D87A /* main.m */; };
 		BA65062918698BE40074D87A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65062818698BE40074D87A /* AppDelegate.m */; };
 		BA65062C18698BE40074D87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA65062A18698BE40074D87A /* Main.storyboard */; };
-		BA65062F18698BE40074D87A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65062E18698BE40074D87A /* ViewController.m */; };
+		BA65062F18698BE40074D87A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65062E18698BE40074D87A /* SecondViewController.m */; };
 		BA65063118698BE50074D87A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA65063018698BE50074D87A /* Images.xcassets */; };
 		BA65063818698BE50074D87A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA65063718698BE50074D87A /* XCTest.framework */; };
 		BA65063918698BE50074D87A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA65061818698BE40074D87A /* Foundation.framework */; };
 		BA65063A18698BE50074D87A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA65061C18698BE40074D87A /* UIKit.framework */; };
 		BA65064218698BE50074D87A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA65064018698BE50074D87A /* InfoPlist.strings */; };
 		BA65064418698BE50074D87A /* Ex1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064318698BE50074D87A /* Ex1Tests.m */; };
+		BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064E18699B050074D87A /* Tab1ViewController.m */; };
+		BA65065218699CC90074D87A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65065118699CC90074D87A /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		BA65062718698BE40074D87A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA65062818698BE40074D87A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BA65062B18698BE40074D87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA65062D18698BE40074D87A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA65062E18698BE40074D87A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA65062D18698BE40074D87A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BA65062E18698BE40074D87A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BA65063018698BE50074D87A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BA65063618698BE50074D87A /* Ex1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ex1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA65063718698BE50074D87A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BA65063F18698BE50074D87A /* Ex1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ex1Tests-Info.plist"; sourceTree = "<group>"; };
 		BA65064118698BE50074D87A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA65064318698BE50074D87A /* Ex1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex1Tests.m; sourceTree = "<group>"; };
+		BA65064D18699B050074D87A /* Tab1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab1ViewController.h; sourceTree = "<group>"; };
+		BA65064E18699B050074D87A /* Tab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
+		BA65065018699CC90074D87A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BA65065118699CC90074D87A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +121,14 @@
 				BA65062718698BE40074D87A /* AppDelegate.h */,
 				BA65062818698BE40074D87A /* AppDelegate.m */,
 				BA65062A18698BE40074D87A /* Main.storyboard */,
-				BA65062D18698BE40074D87A /* ViewController.h */,
-				BA65062E18698BE40074D87A /* ViewController.m */,
+				BA65062D18698BE40074D87A /* SecondViewController.h */,
+				BA65062E18698BE40074D87A /* SecondViewController.m */,
 				BA65063018698BE50074D87A /* Images.xcassets */,
 				BA65061F18698BE40074D87A /* Supporting Files */,
+				BA65064D18699B050074D87A /* Tab1ViewController.h */,
+				BA65064E18699B050074D87A /* Tab1ViewController.m */,
+				BA65065018699CC90074D87A /* FirstViewController.h */,
+				BA65065118699CC90074D87A /* FirstViewController.m */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -249,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA65062F18698BE40074D87A /* ViewController.m in Sources */,
+				BA65062F18698BE40074D87A /* SecondViewController.m in Sources */,
 				BA65062918698BE40074D87A /* AppDelegate.m in Sources */,
+				BA65065218699CC90074D87A /* FirstViewController.m in Sources */,
+				BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */,
 				BA65062518698BE40074D87A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

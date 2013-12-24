@@ -6,17 +6,18 @@
 //  Copyright (c) 2013 SmartGalApps. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
+@interface SecondViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Second";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +25,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didTapOpenModalButton:(id)sender {
+    [self performSegueWithIdentifier:@"OpenTabs" sender:self];
 }
 
 @end
