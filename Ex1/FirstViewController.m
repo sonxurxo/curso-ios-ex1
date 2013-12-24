@@ -10,6 +10,8 @@
 
 #import "Utils.h"
 
+#import "HelloCustomView.h"
+
 @interface FirstViewController ()
 
 @end
@@ -35,7 +37,10 @@
     {
         label.textColor = labelColor;
     }
-    UIView* customView = [[[NSBundle mainBundle] loadNibNamed:@"HelloCustomView" owner:self options:nil] firstObject];
+    HelloCustomView* customView = [[[NSBundle mainBundle] loadNibNamed:@"HelloCustomView" owner:self options:nil] firstObject];
+    
+    customView.helloLabel.text = @"Hola otra vez";
+    
     customView.frame = CGRectMake(0, 80, customView.frame.size.width, customView.frame.size.height);
     [self.view addSubview:customView];
 	// Do any additional setup after loading the view.
