@@ -8,6 +8,8 @@
 
 #import "SecondViewController.h"
 
+#import "Tab1ViewController.h"
+
 @interface SecondViewController ()
 
 @end
@@ -28,7 +30,12 @@
 }
 
 - (IBAction)didTapOpenModalButton:(id)sender {
-    [self performSegueWithIdentifier:@"OpenTabs" sender:self];
+    UITabBarController* tabBarController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TabBarController"];
+    Tab1ViewController* tab1ViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Tab1ViewController"];
+    UIViewController* tab2ViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Tab2ViewController"];
+    tabBarController.viewControllers = @[tab1ViewController, tab2ViewController];
+    [self presentViewController:tabBarController animated:YES completion:NULL];
+//    [self performSegueWithIdentifier:@"OpenTabs" sender:self];
 }
 
 @end

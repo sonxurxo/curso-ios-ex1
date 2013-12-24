@@ -33,18 +33,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6li-og-mMT"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="push" identifier="Next" id="huQ-Vh-ZPH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZG-jb-6qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-427" y="49"/>
+            <point key="canvasLocation" x="-427" y="42"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="vXZ-lx-hvc" customClass="SecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,7 +62,6 @@
                     <navigationItem key="navigationItem" id="Kqz-y8-MUd"/>
                     <connections>
                         <outlet property="openModalButton" destination="b8c-1u-r4g" id="ZP1-zY-1G4"/>
-                        <segue destination="2Gi-dO-GIs" kind="modal" identifier="OpenTabs" id="OZP-9y-IEJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -84,12 +80,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7y-sQ-T0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-942" y="49"/>
+            <point key="canvasLocation" x="-942" y="42"/>
         </scene>
         <!--Tab1 View Controller - Tab 1-->
         <scene sceneID="B8a-hu-V09">
             <objects>
-                <viewController title="Tab 1" id="ugk-gF-EKh" customClass="Tab1ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tab1ViewController" title="Tab 1" id="ugk-gF-EKh" customClass="Tab1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9VU-vw-9wT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -122,26 +118,22 @@
         <!--Tab Bar Controller - Tab bar controller-->
         <scene sceneID="Zyj-Va-E14">
             <objects>
-                <tabBarController title="Tab bar controller" definesPresentationContext="YES" id="2Gi-dO-GIs" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" title="Tab bar controller" definesPresentationContext="YES" id="2Gi-dO-GIs" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="FxZ-XD-Xss">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="ugk-gF-EKh" kind="relationship" relationship="viewControllers" id="T3O-e1-ZMx"/>
-                        <segue destination="mIP-om-fjv" kind="relationship" relationship="viewControllers" id="3CO-pf-1o5"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3K-1m-FY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="49"/>
+            <point key="canvasLocation" x="663" y="42"/>
         </scene>
         <!--View Controller - Tab 2-->
         <scene sceneID="vRh-1q-k0Y">
             <objects>
-                <viewController title="Tab 2" id="mIP-om-fjv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tab2ViewController" title="Tab 2" id="mIP-om-fjv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Chz-Xn-DoA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

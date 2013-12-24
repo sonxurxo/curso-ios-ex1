@@ -8,6 +8,8 @@
 
 #import "FirstViewController.h"
 
+#import "SecondViewController.h"
+
 @interface FirstViewController ()
 
 @end
@@ -37,6 +39,8 @@
 }
 
 - (IBAction)didTapNextButton:(id)sender {
-    [self performSegueWithIdentifier:@"Next" sender:self];
+    SecondViewController* secondViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    [self.navigationController pushViewController:secondViewController animated:YES];
+//    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 @end
