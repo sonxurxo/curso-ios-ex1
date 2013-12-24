@@ -139,35 +139,130 @@
                     </tabBar>
                     <connections>
                         <segue destination="ugk-gF-EKh" kind="relationship" relationship="viewControllers" id="T3O-e1-ZMx"/>
-                        <segue destination="mIP-om-fjv" kind="relationship" relationship="viewControllers" id="3CO-pf-1o5"/>
+                        <segue destination="iMP-wq-0gq" kind="relationship" relationship="viewControllers" id="smC-pN-zw8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3K-1m-FY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="663" y="42"/>
         </scene>
-        <!--View Controller - Tab 2-->
+        <!--View Controller - Controls-->
         <scene sceneID="vRh-1q-k0Y">
             <objects>
-                <viewController title="Tab 2" id="mIP-om-fjv" sceneMemberID="viewController">
+                <viewController id="mIP-om-fjv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Chz-Xn-DoA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ohj-dp-K6g">
-                                <rect key="frame" x="139" y="111" width="37" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="fBf-Vg-VlM">
+                                <rect key="frame" x="20" y="104" width="123" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="dYW-Sq-YFF">
+                                <rect key="frame" x="175" y="99" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="bNW-wx-THP">
+                                <rect key="frame" x="177" y="158" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" id="RGg-lb-lG7">
+                                <rect key="frame" x="20" y="159" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </stepper>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="z7C-7M-Wvf">
+                                <rect key="frame" x="0.0" y="476" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="0z1-cF-ZOo"/>
+                                    <barButtonItem systemItem="add" id="m6r-5v-e19"/>
+                                    <barButtonItem systemItem="compose" id="xV2-8n-bf9"/>
+                                    <barButtonItem width="61" style="plain" systemItem="fixedSpace" id="yhw-tO-MlF"/>
+                                    <barButtonItem systemItem="action" id="UIV-2Z-bAX"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oeh-xV-IXE"/>
+                                    <barButtonItem systemItem="done" id="UXp-mA-Bzr"/>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tqS-uk-VY3">
+                                <rect key="frame" x="123" y="355" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Text inputs">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Oyu-H8-qJV" kind="push" id="caK-Ba-IiY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.8944614955357143" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="3ht-zj-T1f"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="ETS-Q4-X9Q"/>
+                    <navigationItem key="navigationItem" title="Controls" id="ods-Sv-vKc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eck-15-cIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="375"/>
+            <point key="canvasLocation" x="1678" y="397"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="1Sn-eQ-pDn">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="iMP-wq-0gq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="r0w-za-2PS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BtO-fm-kjv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mIP-om-fjv" kind="relationship" relationship="rootViewController" id="j25-L3-vpD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whG-Tv-A6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="397"/>
+        </scene>
+        <!--Text Inputs View Controller - Text inputs-->
+        <scene sceneID="d5e-bd-Ivb">
+            <objects>
+                <viewController id="Oyu-H8-qJV" customClass="TextInputsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfG-tC-pfo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" minimumFontSize="17" clearButtonMode="whileEditing" id="bOC-Mg-ea8">
+                                <rect key="frame" x="20" y="87" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Oyu-H8-qJV" id="tSN-il-fXK"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="KEH-1A-SqI">
+                                <rect key="frame" x="20" y="133" width="280" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Oyu-H8-qJV" id="XAq-n3-RkP"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.89446149549999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text inputs" id="Aor-CB-MCr"/>
+                    <connections>
+                        <outlet property="textField" destination="bOC-Mg-ea8" id="XMe-PL-b1O"/>
+                        <outlet property="textView" destination="KEH-1A-SqI" id="3AP-qk-zip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQb-jp-Orx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135" y="397"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
