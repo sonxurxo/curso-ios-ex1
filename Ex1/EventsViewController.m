@@ -43,6 +43,14 @@
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 }
 
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self becomeFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -76,6 +84,13 @@
 
 - (void)orientationChanged:(NSNotification *)notification {
     NSLog(@"orientationChanged");
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        NSLog(@"Shaked");
+    }
 }
 
 @end
