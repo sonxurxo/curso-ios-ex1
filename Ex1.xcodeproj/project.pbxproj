@@ -24,6 +24,7 @@
 		BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064E18699B050074D87A /* Tab1ViewController.m */; };
 		BA65065218699CC90074D87A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65065118699CC90074D87A /* FirstViewController.m */; };
 		BA65069A1869A7850074D87A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6506991869A7850074D87A /* Utils.m */; };
+		BA65069D1869A9B90074D87A /* HelloCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA65069C1869A9B90074D87A /* HelloCustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BA65065118699CC90074D87A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BA6506981869A7850074D87A /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		BA6506991869A7850074D87A /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		BA65069C1869A9B90074D87A /* HelloCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloCustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		BA65061E18698BE40074D87A /* Ex1 */ = {
 			isa = PBXGroup;
 			children = (
+				BA65069B1869A9AB0074D87A /* Views */,
 				BA65062718698BE40074D87A /* AppDelegate.h */,
 				BA65062818698BE40074D87A /* AppDelegate.m */,
 				BA65062A18698BE40074D87A /* Main.storyboard */,
@@ -165,6 +168,14 @@
 				BA65064018698BE50074D87A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA65069B1869A9AB0074D87A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA65069C1869A9B90074D87A /* HelloCustomView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 			files = (
 				BA65063118698BE50074D87A /* Images.xcassets in Resources */,
 				BA65062318698BE40074D87A /* InfoPlist.strings in Resources */,
+				BA65069D1869A9B90074D87A /* HelloCustomView.xib in Resources */,
 				BA65062C18698BE40074D87A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
