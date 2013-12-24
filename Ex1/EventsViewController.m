@@ -31,6 +31,16 @@
     UITapGestureRecognizer* tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
     tapGestureRecognizer.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:tapGestureRecognizer];
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+
+-(void) viewDidDisappear {
+    // Request to stop receiving accelerometer events and turn off accelerometer
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,4 +73,9 @@
     UILongPressGestureRecognizer* recognizer = (UILongPressGestureRecognizer*)sender;
     NSLog(@"longPressGestureAction: %d", recognizer.state);
 }
+
+- (void)orientationChanged:(NSNotification *)notification {
+    NSLog(@"orientationChanged");
+}
+
 @end
