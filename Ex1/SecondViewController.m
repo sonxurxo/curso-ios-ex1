@@ -40,22 +40,45 @@
 {
     NSLog(@"viewWillDisappear");
     
-    if (self.delegate && [self.delegate respondsToSelector:NSSelectorFromString(@"secondViewControllerViewDidDisappearCallback:")])
-    {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [self.delegate performSelector:NSSelectorFromString(@"secondViewControllerViewDidDisappearCallback:") withObject:@"EL PARÁMETRO"];
-#pragma clang diagnostic pop
-    }
-    
     [super viewWillDisappear:animated];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     NSLog(@"viewDidDisappear");
+    
+    [self didTapOpenModalButton:nil];
+    
+//    [self performSelector:@selector(getUsersFromFacebook)];
+//
+//    [self performSelector:@selector(getUsersFromFacebook) withObject:@"pepe"];
+//    
+//    [self performSelectorInBackground:@selector(getUsersFromFacebook) withObject:nil];
+//    
+//    self performSelectorOnMainThread:@selector(didReceiveMemoryWarning) withObject:<#(id)#> waitUntilDone:<#(BOOL)#>
+    
+//    SEL elSelector = @selector(misa);
+    
+    if (self.delegate && [self.delegate respondsToSelector:NSSelectorFromString(@"secondViewControllerViewDidDisappearCallback:")])
+    {
+        [self.delegate performSelector:NSSelectorFromString(@"secondViewControllerViewDidDisappearCallback:") withObject:@"EL PARÁMETRO"];
+    }
+    
     [super viewDidDisappear:animated];
 }
+
+//- (void)getUsersFromFacebook
+//{
+//    // Acceso largo y complicado
+//    NSArray* users = @[];
+//    
+//    [self performSelectorOnMainThread:@selector(updateInterface:) withObject:users waitUntilDone:NO];
+//}
+//
+//- (void)updateInterface:(NSArray*)users
+//{
+//    // Mostrar usuarios en la view
+//}
 
 - (void)didReceiveMemoryWarning
 {
