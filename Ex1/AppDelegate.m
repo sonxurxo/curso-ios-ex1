@@ -14,10 +14,28 @@
 {
     // Override point for customization after application launch.
     
-    NSDictionary *appDefaults = @{@"name_preference" : @"Xurxo",
-                                  @"enabled_preference" : @YES,
-                                  @"slider_preference" : @.3};
-    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+    
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    
+    // LO LEO
+    int numberOfExecutions = [defaults integerForKey:@"number_of_executions"];
+    
+    // LO AUMENTO
+    numberOfExecutions++;
+    
+    // LO GUARDO
+    [defaults setObject:[NSNumber numberWithInt:numberOfExecutions] forKey:@"number_of_executions"];
+    [defaults synchronize];
+    
+    NSLog(@"Ejecución número %d", numberOfExecutions);
+    
+    
+//    NSDictionary *appDefaults = @{@"name_preference" : @"Xurxo",
+//                                  @"enabled_preference" : @YES,
+//                                  @"slider_preference" : @.3,
+//                                  @"number_of_executions" : @0};
+//    
+//    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
     
     return YES;
 }
