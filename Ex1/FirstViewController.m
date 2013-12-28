@@ -12,7 +12,9 @@
 
 @end
 
-@implementation FirstViewController
+@implementation FirstViewController {
+    SecondViewController* _secondViewController;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,8 +46,8 @@
 {
     if ([segue.identifier isEqualToString:@"Next"])
     {
-        SecondViewController* secondViewController = segue.destinationViewController;
-        secondViewController.delegate = self;
+        _secondViewController = segue.destinationViewController;
+        _secondViewController.delegate = self;
     }
 }
 
@@ -54,6 +56,12 @@
 - (void)secondViewControllerViewDidDisappearCallback:(NSString *)weirdParameter
 {
     NSLog(@"Second view controller view did disappear callback with parameter: %@", weirdParameter);
+}
+
+- (void)didTapOpenModalButton
+{
+    [self performSegueWithIdentifier:@"OpenTabs" sender:self];
+//    [_secondViewController.openModalButton setTitle:@"Nuevo" forState:UIControlStateNormal];
 }
 
 #pragma mark -

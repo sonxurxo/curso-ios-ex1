@@ -39,13 +39,13 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     NSLog(@"viewWillDisappear");
-    [self.delegate secondViewControllerViewDidDisappearCallback:@"EL PARÁMETRO"];
     [super viewWillDisappear:animated];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     NSLog(@"viewDidDisappear");
+    [self.delegate secondViewControllerViewDidDisappearCallback:@"EL PARÁMETRO"];
     [super viewDidDisappear:animated];
 }
 
@@ -56,7 +56,8 @@
 }
 
 - (IBAction)didTapOpenModalButton:(id)sender {
-    [self performSegueWithIdentifier:@"OpenTabs" sender:self];
+    
+    [self.delegate didTapOpenModalButton];
 }
 
 @end

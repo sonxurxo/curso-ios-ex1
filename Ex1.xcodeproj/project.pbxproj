@@ -472,6 +472,7 @@
 				BA65064918698BE50074D87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA65064A18698BE50074D87A /* Build configuration list for PBXNativeTarget "Ex1Tests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				BA65064C18698BE50074D87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

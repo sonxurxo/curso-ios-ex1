@@ -12,6 +12,10 @@
 
 - (void)secondViewControllerViewDidDisappearCallback:(NSString*)weirdParameter;
 
+@optional
+
+- (void)didTapOpenModalButton;
+
 @end
 
 @interface SecondViewController : UIViewController
