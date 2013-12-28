@@ -110,25 +110,11 @@
                         <color key="backgroundColor" red="0.89542410714285714" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="XLY-XN-H7h"/>
+                    <navigationItem key="navigationItem" id="QZR-yn-hnI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avq-DI-koY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="-278"/>
-        </scene>
-        <!--Tab Bar Controller - Tab bar controller-->
-        <scene sceneID="Zyj-Va-E14">
-            <objects>
-                <tabBarController storyboardIdentifier="TabBarController" title="Tab bar controller" definesPresentationContext="YES" id="2Gi-dO-GIs" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="FxZ-XD-Xss">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C3K-1m-FY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="663" y="42"/>
+            <point key="canvasLocation" x="1246" y="-330"/>
         </scene>
         <!--View Controller - Tab 2-->
         <scene sceneID="vRh-1q-k0Y">

@@ -47,17 +47,17 @@
 
 - (IBAction)didTapNextButton:(id)sender {
     
-//    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    SecondViewController* secondViewController = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SecondViewController* secondViewController = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
     
     
-    TestViewController* testViewController = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
-    testViewController.label.text = @"PEPE";
+//    TestViewController* testViewController = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+//    testViewController.label.text = @"PEPE";
     
 //    SecondViewController* secondViewController = [ instantiateViewControllerWithIdentifier:@"SecondViewController"];
     
     
-    [self.navigationController pushViewController:testViewController animated:YES];
+    [self.navigationController pushViewController:secondViewController animated:YES];
 //    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 

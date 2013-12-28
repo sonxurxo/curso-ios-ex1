@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     self.title = @"Second";
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,11 +31,28 @@
 }
 
 - (IBAction)didTapOpenModalButton:(id)sender {
-    UITabBarController* tabBarController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TabBarController"];
+    
+    
     Tab1ViewController* tab1ViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Tab1ViewController"];
+    
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:tab1ViewController];
+    
+    
     UIViewController* tab2ViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Tab2ViewController"];
-    tabBarController.viewControllers = @[tab1ViewController, tab2ViewController];
-    [self presentViewController:tabBarController animated:YES completion:NULL];
+    
+    
+    UITabBarController* tabBarController = [[UITabBarController alloc] init];
+    
+
+    tabBarController.viewControllers = @[navController, tab2ViewController];
+    
+    
+//    [self presentViewController:tabBarController animated:YES completion:NULL];
+    
+    [self presentViewController:tabBarController animated:YES completion:^{
+        NSLog(@"Se presentó");
+    }];
+    
 //    [self performSegueWithIdentifier:@"OpenTabs" sender:self];
 }
 
