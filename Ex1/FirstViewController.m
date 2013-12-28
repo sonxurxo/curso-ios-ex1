@@ -10,6 +10,8 @@
 
 #import "SecondViewController.h"
 
+#import "TestViewController.h"
+
 @interface FirstViewController ()
 
 @end
@@ -38,9 +40,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+}
+
 - (IBAction)didTapNextButton:(id)sender {
-    SecondViewController* secondViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SecondViewController"];
-    [self.navigationController pushViewController:secondViewController animated:YES];
+    
+//    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    SecondViewController* secondViewController = [storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    
+    
+    TestViewController* testViewController = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+    testViewController.label.text = @"PEPE";
+    
+//    SecondViewController* secondViewController = [ instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    
+    
+    [self.navigationController pushViewController:testViewController animated:YES];
 //    [self performSegueWithIdentifier:@"Next" sender:self];
 }
+
+
 @end

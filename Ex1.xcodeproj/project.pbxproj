@@ -23,6 +23,8 @@
 		BA65064418698BE50074D87A /* Ex1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064318698BE50074D87A /* Ex1Tests.m */; };
 		BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65064E18699B050074D87A /* Tab1ViewController.m */; };
 		BA65065218699CC90074D87A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65065118699CC90074D87A /* FirstViewController.m */; };
+		BACC35D4186EC2D90058E326 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACC35D3186EC2D90058E326 /* TestViewController.xib */; };
+		BACC35D7186EC3200058E326 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC35D6186EC3200058E326 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		BA65064E18699B050074D87A /* Tab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
 		BA65065018699CC90074D87A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		BA65065118699CC90074D87A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BACC35D3186EC2D90058E326 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		BACC35D5186EC3200058E326 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		BACC35D6186EC3200058E326 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,9 @@
 				BA65064E18699B050074D87A /* Tab1ViewController.m */,
 				BA65065018699CC90074D87A /* FirstViewController.h */,
 				BA65065118699CC90074D87A /* FirstViewController.m */,
+				BACC35D3186EC2D90058E326 /* TestViewController.xib */,
+				BACC35D5186EC3200058E326 /* TestViewController.h */,
+				BACC35D6186EC3200058E326 /* TestViewController.m */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			files = (
 				BA65063118698BE50074D87A /* Images.xcassets in Resources */,
 				BA65062318698BE40074D87A /* InfoPlist.strings in Resources */,
+				BACC35D4186EC2D90058E326 /* TestViewController.xib in Resources */,
 				BA65062C18698BE40074D87A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACC35D7186EC3200058E326 /* TestViewController.m in Sources */,
 				BA65062F18698BE40074D87A /* SecondViewController.m in Sources */,
 				BA65062918698BE40074D87A /* AppDelegate.m in Sources */,
 				BA65065218699CC90074D87A /* FirstViewController.m in Sources */,
@@ -472,6 +482,7 @@
 				BA65064918698BE50074D87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA65064A18698BE50074D87A /* Build configuration list for PBXNativeTarget "Ex1Tests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +491,7 @@
 				BA65064C18698BE50074D87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
