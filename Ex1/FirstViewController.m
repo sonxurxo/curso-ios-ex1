@@ -10,6 +10,8 @@
 
 #import "Utils.h"
 
+#import "CustomView.h"
+
 @interface FirstViewController ()
 
 @end
@@ -35,7 +37,24 @@
     {
         label.textColor = labelColor;
     }
-	// Do any additional setup after loading the view.
+    
+    NSBundle* bundle = [NSBundle mainBundle];
+    
+    NSArray* views = [bundle loadNibNamed:@"CustomView" owner:self options:nil];
+    
+    CustomView* customView = [views firstObject];
+    
+    customView.delegate = self;
+    customView.label.text = @"pepe";
+    
+    customView.frame = CGRectMake(30, 70, customView.frame.size.width, customView.frame.size.height);
+    
+    [self.view addSubview:customView];
+}
+
+- (void)didTapShareButton:(NSString*)string
+{
+    NSLog(@"Pulso el boton con valor : %@", string);
 }
 
 - (void)didReceiveMemoryWarning

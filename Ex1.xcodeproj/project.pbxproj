@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA4A39E9186EECF7006C7B67 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA4A39E8186EECF7006C7B67 /* CustomView.xib */; };
+		BA4A39EC186EF1FC006C7B67 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4A39EB186EF1FC006C7B67 /* CustomView.m */; };
 		BA65061918698BE40074D87A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA65061818698BE40074D87A /* Foundation.framework */; };
 		BA65061B18698BE40074D87A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA65061A18698BE40074D87A /* CoreGraphics.framework */; };
 		BA65061D18698BE40074D87A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA65061C18698BE40074D87A /* UIKit.framework */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA4A39E8186EECF7006C7B67 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		BA4A39EA186EF1FC006C7B67 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		BA4A39EB186EF1FC006C7B67 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		BA65061518698BE40074D87A /* Ex1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ex1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA65061818698BE40074D87A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA65061A18698BE40074D87A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA4A39E7186EECD8006C7B67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A39E8186EECF7006C7B67 /* CustomView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		BA65060C18698BE40074D87A = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		BA65061E18698BE40074D87A /* Ex1 */ = {
 			isa = PBXGroup;
 			children = (
+				BA4A39E7186EECD8006C7B67 /* Views */,
 				BA65062718698BE40074D87A /* AppDelegate.h */,
 				BA65062818698BE40074D87A /* AppDelegate.m */,
 				BA65062A18698BE40074D87A /* Main.storyboard */,
@@ -134,6 +148,8 @@
 				BA65065118699CC90074D87A /* FirstViewController.m */,
 				BA6506981869A7850074D87A /* Utils.h */,
 				BA6506991869A7850074D87A /* Utils.m */,
+				BA4A39EA186EF1FC006C7B67 /* CustomView.h */,
+				BA4A39EB186EF1FC006C7B67 /* CustomView.m */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA65063118698BE50074D87A /* Images.xcassets in Resources */,
+				BA4A39E9186EECF7006C7B67 /* CustomView.xib in Resources */,
 				BA65062318698BE40074D87A /* InfoPlist.strings in Resources */,
 				BA65062C18698BE40074D87A /* Main.storyboard in Resources */,
 			);
@@ -268,6 +285,7 @@
 				BA65062918698BE40074D87A /* AppDelegate.m in Sources */,
 				BA65065218699CC90074D87A /* FirstViewController.m in Sources */,
 				BA65069A1869A7850074D87A /* Utils.m in Sources */,
+				BA4A39EC186EF1FC006C7B67 /* CustomView.m in Sources */,
 				BA65064F18699B050074D87A /* Tab1ViewController.m in Sources */,
 				BA65062518698BE40074D87A /* main.m in Sources */,
 			);
@@ -478,6 +496,7 @@
 				BA65064918698BE50074D87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA65064A18698BE50074D87A /* Build configuration list for PBXNativeTarget "Ex1Tests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +505,7 @@
 				BA65064C18698BE50074D87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
